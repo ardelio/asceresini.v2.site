@@ -1,5 +1,5 @@
 {
-  "name": "ardelio-ink-build",
+  "name": "asceresini-v2-site",
   "version": "1.0.0",
   "description": "",
   "main": "entry.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ardelio-ink/build.git"
+    "url": "git+https://github.com/asceresini/asceresini.v2.site.git"
   },
   "author": "Anthony Sceresini <me@ardel.io>",
   "license": "",
   "bugs": {
-    "url": "https://github.com/ardelio-ink/build/issues"
+    "url": "https://github.com/asceresini/asceresini.v2.site/issues"
   },
-  "homepage": "https://github.com/ardelio-ink/build#readme",
+  "homepage": "https://github.com/asceresini/asceresini.v2.site#readme",
   "dependencies": {
     "babel-core": "^6.7.2",
     "babel-loader": "^6.2.4",
