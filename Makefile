@@ -1,3 +1,5 @@
+DATE := `date '+%d/%m/%Y %H:%M:%S'`
+
 build:
 	@echo 'Building webpack for production'
 	@echo NODE_ENV: production
@@ -13,7 +15,7 @@ git_commit:
 		&& cd dist/ \
 		&& git init . \
 		&& git add --all \
-		&& git -c user.email=me@ardel.io -c user.name='Travis CI' commit -m "Site update at $(date '+%d/%m/%Y %H:%M:%S')";
+		&& git -c user.email=me@ardel.io -c user.name='Travis CI' commit -m "Site update at ${DATE}";
 
 git_push:
 	@echo 'Force pushing quietly' \
