@@ -20,8 +20,6 @@ body {
 
 #social-icon-component a {
   border: none;
-  border-radius: 40px;
-  font-size: 1000%;
   transition: background-color .2s ease-out;
   -moz-transition: background-color .2s ease-out;
   -webkit-transition: background-color .2s ease-out;
