@@ -1,0 +1,36 @@
+body {
+  font-size: 16px;
+}
+
+#hero-component {
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+#title-component {
+  font-size: 4em;
+  font-weight: 600;
+  line-height: initial;
+}
+
+#punchline-component {
+  font-size: 2em;
+  line-height: initial;
+}
+
+#social-icon-component a {
+  border: none;
+  border-radius: 40px;
+  font-size: 1000%;
+  transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -webkit-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+}
+
+#social-icon-component a:hover {
+  transition: background-color .5s ease-in;
+  -moz-transition: background-color .5s ease-in;
+  -webkit-transition: background-color .5s ease-in;
+  -o-transition: background-color .5s ease-in;
+}

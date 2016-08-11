@@ -14,11 +14,7 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: "file?name=[name].[ext]?[hash]"
-      },
-      {
-        test: /\.html$/,
+        test: /\.(html|css|svg)$/,
         loader: "file?name=[name].[ext]?[hash]"
       }
     ]
