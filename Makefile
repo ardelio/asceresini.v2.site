@@ -7,14 +7,14 @@ build:
 
 git_commit:
 	@echo 'Commiting as user: TravisCI' \
-		&& cd dist/ \
+		&& cd build/ \
 		&& git init . \
 		&& git add --all \
 		&& git -c user.email=me@ardel.io -c user.name='Travis CI' commit -m "Site update at ${DATE}";
 
 git_push:
 	@echo 'Force pushing quietly' \
-	&& cd dist/ \
+	&& cd build/ \
 	&& git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master 2>%1 > /dev/null;
 
 deploy: build git_commit git_push
