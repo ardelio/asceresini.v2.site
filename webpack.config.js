@@ -1,11 +1,8 @@
 const path = require('path');
 
 module.exports = {
-  entry: "./entry.js",
-  output: {
-    path: path.join(__dirname, 'build'),
-    filename: "bundle.js"
-  },
+  devtool: 'inline-source-map',
+  entry: './browser/index.js',
   module: {
     loaders: [
       {
@@ -13,13 +10,22 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
         query: {
-          presets: ['react', 'es2015']
+          presets: ['react', 'es2015', 'stage-2']
         }
       },
       {
         test: /\.css$/,
-        loader: "style!css"
+        loader: 'style!css'
+      },
+      {
+        test: /\.html$/,
+        loader: "file?name=[name].[ext]"
       }
     ]
-  }
+  },
+  output: {
+    path: path.join(__dirname, 'build'),
+    filename: 'bundle.js'
+  },
+  target: 'web'
 };

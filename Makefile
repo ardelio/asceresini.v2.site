@@ -3,12 +3,7 @@ DATE := `date '+%d/%m/%Y %H:%M:%S'`
 build:
 	@echo 'Building webpack for production'
 	@echo NODE_ENV: production
-	@NODE_ENV=production ./node_modules/.bin/webpack
-
-package:
-	@echo 'Creating Distribution directory' \
-		&& mkdir -p dist \
-		&& cp -r build index.html dist/;
+	@NODE_ENV=production npm run build
 
 git_commit:
 	@echo 'Commiting as user: TravisCI' \
@@ -22,11 +17,7 @@ git_push:
 	&& cd dist/ \
 	&& git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master 2>%1 > /dev/null;
 
-cleanup:
-	@echo 'Obliterating dist/' \
-	&& rm -rf dist/;
-
-deploy: build package git_commit git_push cleanup
+deploy: build git_commit git_push
 	@echo 'Deployed to GitHub';
 
-.PHONY: build cleanup deploy git_commit git_push package
+.PHONY: build deploy git_commit git_push
