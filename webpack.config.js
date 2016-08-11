@@ -15,11 +15,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style!css'
+        loader: "file?name=[name].[ext]?[hash]"
       },
       {
         test: /\.html$/,
-        loader: "file?name=[name].[ext]"
+        loader: "file?name=[name].[ext]?[hash]"
       }
     ]
   },
