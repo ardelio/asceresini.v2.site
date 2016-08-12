@@ -7,10 +7,13 @@ body {
   margin-bottom: 8em;
 }
 
+#hero-component .grid {
+  line-height: normal;
+}
+
 #title-component {
   font-size: 4em;
   font-weight: 600;
-  line-height: initial;
 }
 
 #punchline-component {
