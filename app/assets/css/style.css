@@ -35,3 +35,8 @@ body {
   -webkit-transition: background-color .5s ease-in;
   -o-transition: background-color .5s ease-in;
 }
+
+#social-icon-component img {
+  max-width: 68px;
+  max-height: 68px;
+}
