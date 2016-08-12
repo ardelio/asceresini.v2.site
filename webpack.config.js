@@ -16,6 +16,10 @@ module.exports = {
       {
         test: /\.(html|css|svg)$/,
         loader: "file?name=[name].[ext]?[hash]"
+      },
+      {
+        test: /\.ico$/,
+        loader: "file?name=[name].[ext]"
       }
     ]
   },

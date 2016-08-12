@@ -3,6 +3,8 @@ require('./index.html')
 require('../node_modules/hack/dist/hack.css')
 require('../app/assets/css/style.css');
 
+require('../app/assets/favicon.ico');
+
 require('../app/assets/svg/facebook.svg');
 require('../app/assets/svg/github.svg');
 require('../app/assets/svg/linkedin.svg');
