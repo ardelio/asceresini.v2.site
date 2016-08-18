@@ -1,8 +1,10 @@
 import { expect } from 'chai'
-import rssFeedReducer from '../../app/react/reducers/rss-feed-reducer'
+import Reducers from '../../app/react/reducers'
 import { ADD_RSS_ITEM } from '../../app/react/redux-action-types'
 
-describe('rssFeedReducer', () => {
+const { rssFeed } = Reducers
+
+describe('RssFeedReducer', () => {
   it('returns the state untouched when no match', () => {
     const state = {
       items: [
@@ -12,7 +14,7 @@ describe('rssFeedReducer', () => {
     const action = {
       type: 'aRandomTypeThatWontExist'
     }
-    expect(rssFeedReducer(state, action)).to.eql({
+    expect(rssFeed(state, action)).to.eql({
       items: [
         { id: 1 }
       ]
@@ -29,7 +31,7 @@ describe('rssFeedReducer', () => {
       type: ADD_RSS_ITEM,
       rssItem: { id: 2 }
     }
-    expect(rssFeedReducer(state, action)).to.eql({
+    expect(rssFeed(state, action)).to.eql({
       items: [
         { id: 1 },
         { id: 2 }
