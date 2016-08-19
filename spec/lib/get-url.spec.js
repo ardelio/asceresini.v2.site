@@ -1,7 +1,8 @@
 import chai, { expect } from 'chai';
+import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
-import chaiAsPromised from 'chai-as-promised';
+
 import getUrl from '../../app/react/lib/get-url';
 
 chai.use(sinonChai);
@@ -22,11 +23,11 @@ describe('getUrl', () => {
   [
     {
       response: { status: 200, body: 'the body'},
-      url: 'http://example.com'
+      url: 'http://1.test.com'
     },
     {
       response: { status: 201, body: 'the body'},
-      url: 'http://example.com'
+      url: 'http://2.test.com'
     }
   ].forEach(testCase => {
     it(`returns the response when response status is ${testCase.response.status}`, () => {
@@ -44,11 +45,11 @@ describe('getUrl', () => {
   [
     {
       response: { status: 400, statusText: 'Bad Request'},
-      url: 'http://example.com'
+      url: 'http://1.test.com'
     },
     {
       response: { status: 500, statusText: 'Internal Server Error'},
-      url: 'http://example.com'
+      url: 'http://2.test.com'
     }
   ].forEach(testCase => {
     it(`returns an error when response status is ${testCase.response.status}`, () => {
