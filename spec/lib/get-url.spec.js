@@ -3,7 +3,7 @@ import chaiAsPromised from 'chai-as-promised';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 
-import getUrl from '../../app/react/lib/get-url';
+import getUrl from '../../app/lib/get-url';
 
 chai.use(sinonChai);
 chai.use(chaiAsPromised);

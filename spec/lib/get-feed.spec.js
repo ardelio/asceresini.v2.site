@@ -10,7 +10,7 @@ chai.use(sinonChai);
 
 const proxyquireStrict = proxyquire.noCallThru();
 const getUrl = sinon.stub();
-const getFeed = proxyquireStrict('../../app/react/lib/get-feed', {
+const getFeed = proxyquireStrict('../../app/lib/get-feed', {
   './get-url': getUrl
 }).default
 

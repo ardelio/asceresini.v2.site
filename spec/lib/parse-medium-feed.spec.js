@@ -9,7 +9,7 @@ chai.use(sinonChai);
 
 const proxyquireStrict = proxyquire.noCallThru();
 const getFeed = sinon.stub();
-const parseMediumFeed = proxyquireStrict('../../app/react/lib/parse-medium-feed', {
+const parseMediumFeed = proxyquireStrict('../../app/lib/parse-medium-feed', {
   './get-feed': getFeed
 }).default
 
