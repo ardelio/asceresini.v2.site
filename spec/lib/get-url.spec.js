@@ -10,14 +10,17 @@ chai.use(chaiAsPromised);
 
 describe('getUrl', () => {
   let consoleError = null;
+  let fetch = null;
 
-  before(() => {
+  beforeEach(() => {
     consoleError = console.error;
     console.error = () => {};
+    fetch = window.fetch;
   });
 
-  after(() => {
+  afterEach(() => {
     console.error = consoleError;
+    window.fetch = fetch;
   });
 
   [
@@ -31,13 +34,13 @@ describe('getUrl', () => {
     }
   ].forEach(testCase => {
     it(`returns the response when response status is ${testCase.response.status}`, () => {
-      const fetch = sinon.stub();
+      window.fetch = sinon.stub();
 
-      fetch.returns(new Promise(resolve => resolve(testCase.response)));
+      window.fetch.returns(new Promise(resolve => resolve(testCase.response)));
 
       return Promise.all([
-        expect(getUrl(testCase.url, fetch)).to.eventually.equal(testCase.response),
-        expect(fetch).to.have.been.calledWith(testCase.url)
+        expect(getUrl(testCase.url)).to.eventually.equal(testCase.response),
+        expect(window.fetch).to.have.been.calledWith(testCase.url)
       ]);
     });
   });
@@ -53,14 +56,14 @@ describe('getUrl', () => {
     }
   ].forEach(testCase => {
     it(`returns an error when response status is ${testCase.response.status}`, () => {
-      const fetch = sinon.stub();
+      window.fetch = sinon.stub();
 
-      fetch.returns(new Promise(resolve => resolve(testCase.response)));
+      window.fetch.returns(new Promise(resolve => resolve(testCase.response)));
 
       return Promise.all([
-        expect(getUrl(testCase.url, fetch))
+        expect(getUrl(testCase.url))
           .to.eventually.be.rejectedWith(`Error: ${testCase.response.statusText}`),
-        expect(fetch).to.have.been.calledWith(testCase.url)
+        expect(window.fetch).to.have.been.calledWith(testCase.url)
       ]);
     });
   });
