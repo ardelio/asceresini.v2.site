@@ -21,6 +21,10 @@ body {
   line-height: initial;
 }
 
+#social-ribbon-component {
+  margin-bottom: 8em;
+}
+
 #social-icon-component a {
   border: none;
   transition: background-color .2s ease-out;
@@ -39,4 +43,16 @@ body {
 #social-icon-component img {
   max-width: 68px;
   max-height: 68px;
+}
+
+#rss-feed-component {
+  margin-bottom: 8em;
+}
+
+#rss-feed-component .card {
+  margin-bottom: 1em;
+}
+
+#rss-feed-component .card img {
+  max-width: 100%;
 }
