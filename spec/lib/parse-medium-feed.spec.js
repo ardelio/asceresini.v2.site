@@ -21,13 +21,13 @@ describe('parseMediumFeed', () => {
         {
           guid: "https:\/\/medium.com\/p\/413362cf5c7c",
           title: 'Useful AWS Resources',
-          description: "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a href=\"https:\/\/medium.com\/@ardelio\/useful-aws-resources-413362cf5c7c?source=rss-b4b1564c1f5b------2\"><img src=\"https:\/\/d262ilb51hltx0.cloudfront.net\/max\/681\/1*Ccu_mmYj5wAATAWUZuqqew.png\" width=\"681\"><\/a><\/p><p class=\"medium-feed-snippet\">I recently attended a bespoke training course run by AWS for Architecting on AWS. I wanted to share some of the learnings, particular in&#x2026;<\/p><p class=\"medium-feed-link\"><a href=\"https:\/\/medium.com\/@ardelio\/useful-aws-resources-413362cf5c7c?source=rss-b4b1564c1f5b------2\">Continue reading on Medium \u00bb<\/a><\/p><\/div>",
+          description: "<div class=\"medium-feed-item\"><p class=\"medium-feed-image\"><a target=\"_blank\" href=\"https:\/\/medium.com\/@ardelio\/useful-aws-resources-413362cf5c7c?source=rss-b4b1564c1f5b------2\"><img src=\"https:\/\/d262ilb51hltx0.cloudfront.net\/max\/681\/1*Ccu_mmYj5wAATAWUZuqqew.png\" width=\"681\"><\/a><\/p><p class=\"medium-feed-snippet\">I recently attended a bespoke training course run by AWS for Architecting on AWS. I wanted to share some of the learnings, particular in&#x2026;<\/p><p class=\"medium-feed-link\"><a target=\"_blank\" href=\"https:\/\/medium.com\/@ardelio\/useful-aws-resources-413362cf5c7c?source=rss-b4b1564c1f5b------2\">Continue reading on Medium \u00bb<\/a><\/p><\/div>",
           url: "https:\/\/medium.com\/@ardelio\/useful-aws-resources-413362cf5c7c?source=rss-b4b1564c1f5b------2"
         },
         {
           guid: "https:\/\/medium.com\/p\/64ea08242413",
           title: 'Mitigating a compromised AWS account',
-          description: "<div class=\"medium-feed-item\"><p class=\"medium-feed-snippet\">My wife contacted me whilst shopping to ask why the credit card was declining. At first I thought it was a terminal\/card problem (most&#x2026;<\/p><p class=\"medium-feed-link\"><a href=\"https:\/\/medium.com\/@ardelio\/mitigating-a-compromised-aws-account-64ea08242413?source=rss-b4b1564c1f5b------2\">Continue reading on Medium \u00bb<\/a><\/p><\/div>",
+          description: "<div class=\"medium-feed-item\"><p class=\"medium-feed-snippet\">My wife contacted me whilst shopping to ask why the credit card was declining. At first I thought it was a terminal\/card problem (most&#x2026;<\/p><p class=\"medium-feed-link\"><a target=\"_blank\" href=\"https:\/\/medium.com\/@ardelio\/mitigating-a-compromised-aws-account-64ea08242413?source=rss-b4b1564c1f5b------2\">Continue reading on Medium \u00bb<\/a><\/p><\/div>",
           url: "https:\/\/medium.com\/@ardelio\/mitigating-a-compromised-aws-account-64ea08242413?source=rss-b4b1564c1f5b------2"
         }
       ]),
@@ -42,7 +42,7 @@ describe('parseMediumFeed', () => {
         {
           guid: "https:\/\/medium.com\/p\/64ea08242413",
           title: 'Mitigating a compromised AWS account',
-          description: "<div class=\"medium-feed-item\"><p class=\"medium-feed-snippet\">My wife contacted me whilst shopping to ask why the credit card was declining. At first I thought it was a terminal\/card problem (most&#x2026;<\/p><p class=\"medium-feed-link\"><a href=\"https:\/\/medium.com\/@ardelio\/mitigating-a-compromised-aws-account-64ea08242413?source=rss-b4b1564c1f5b------2\">Continue reading on Medium \u00bb<\/a><\/p><\/div>",
+          description: "<div class=\"medium-feed-item\"><p class=\"medium-feed-snippet\">My wife contacted me whilst shopping to ask why the credit card was declining. At first I thought it was a terminal\/card problem (most&#x2026;<\/p><p class=\"medium-feed-link\"><a target=\"_blank\" href=\"https:\/\/medium.com\/@ardelio\/mitigating-a-compromised-aws-account-64ea08242413?source=rss-b4b1564c1f5b------2\">Continue reading on Medium \u00bb<\/a><\/p><\/div>",
           url: "https:\/\/medium.com\/@ardelio\/mitigating-a-compromised-aws-account-64ea08242413?source=rss-b4b1564c1f5b------2"
         }
       ]),
