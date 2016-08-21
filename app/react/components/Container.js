@@ -4,7 +4,11 @@ class Container extends Component {
   render() {
     return (
       <div id="container" className="container">
-        { this.props.children }
+        <div className="grid justify-content -around">
+          <div className="cell">
+            { this.props.children }
+          </div>
+        </div>
       </div>
     )
   }

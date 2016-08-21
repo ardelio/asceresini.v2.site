@@ -4,10 +4,11 @@ import { RssItem } from '../components'
 
 export const RssFeed = props => (
   <div id="rss-feed-component">
+    <h1>Things I do. Stuff I've said.</h1>
     {props.rssItems.map(item => {
       return (
-        <div className="grid justify-content -around" key={item.guid}>
-          <div className="cell -10of12">
+        <div className="grid" key={item.guid}>
+          <div className="cell">
             <RssItem
               url={item.url}
               title={item.title}

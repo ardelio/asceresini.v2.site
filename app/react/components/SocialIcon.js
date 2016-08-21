@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 class SocialIcon extends Component {
   render() {
     return (
-      <div id="social-icon-component" className="grid justify-content -around">
-        <div className="cell -12of12">
+      <div id="social-icon-component" className="grid">
+        <div className="cell">
           <a href={ this.props.url } target="_blank">
             <img src={ this.props.src } alt={ this.props.alt } />
           </a>
