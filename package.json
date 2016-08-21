@@ -8,7 +8,8 @@
     "build": "webpack --config webpack.production.config.js",
     "start": "webpack-dev-server -w --inline --hot --content-base browser",
     "test": "NODE_ENV=test NODE_PATH=./src ./node_modules/.bin/mocha --compilers js:babel-register --require jsdom-global/register --recursive spec",
-    "watch": "NODE_ENV=test NODE_PATH=./src ./node_modules/.bin/mocha -w --compilers js:babel-register --require jsdom-global/register --recursive spec"
+    "watch": "NODE_ENV=test NODE_PATH=./src ./node_modules/.bin/mocha -w --compilers js:babel-register --require jsdom-global/register --recursive spec",
+    "debug": "NODE_ENV=test NODE_PATH=./src ./node_modules/.bin/mocha debug --compilers js:babel-register --require jsdom-global/register --recursive spec"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/asceresini/asceresini.v2.site#readme",
   "dependencies": {
     "hack": "^0.5.6",
+    "lodash": "^4.15.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-redux": "^4.4.5",

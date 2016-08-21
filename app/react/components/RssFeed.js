@@ -9,17 +9,18 @@ export const RssFeed = props => (
         <div className="grid justify-content -around" key={item.guid}>
           <div className="cell -10of12">
             <RssItem
-              key={item.guid}
-              guid={item.guid}
+              url={item.guid}
               title={item.title}
               description={item.description} />
-            </div>
+          </div>
         </div>
     )})}
   </div>
 )
 
-RssFeed.propTypes = {}
+RssFeed.propTypes = {
+  rssItems: React.PropTypes.array
+}
 
 export default connect(
   state => ({ rssItems: state.rssFeed.items })
