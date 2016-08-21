@@ -7,12 +7,14 @@ describe('AddRssItem', () => {
     const guid = 'guid'
     const title = 'title'
     const description = 'description'
+    const url = 'http://test.com'
 
-    expect(AddRssItem(guid, title, description)).to.eql({
+    expect(AddRssItem(guid, title, description, url)).to.eql({
       rssItem: {
         guid: 'guid',
         title: 'title',
-        description: 'description'
+        description: 'description',
+        url: 'http://test.com'
       },
       type: ADD_RSS_ITEM
     })

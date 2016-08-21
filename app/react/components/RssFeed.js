@@ -9,7 +9,7 @@ export const RssFeed = props => (
         <div className="grid justify-content -around" key={item.guid}>
           <div className="cell -10of12">
             <RssItem
-              url={item.guid}
+              url={item.url}
               title={item.title}
               description={item.description} />
           </div>

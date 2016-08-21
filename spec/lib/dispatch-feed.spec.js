@@ -15,12 +15,14 @@ describe('dispatchFeed', () => {
       {
         guid: 1,
         title: 'title',
-        description: 'description'
+        description: 'description',
+        url: 'http://test.com'
       },
       {
         guid: 2,
         title: 'title',
-        description: 'description'
+        description: 'description',
+        url: 'http://test.com'
       }
     ];
 
@@ -34,14 +36,16 @@ describe('dispatchFeed', () => {
       {
         guid: 1,
         title: 'title',
-        description: 'description'
+        description: 'description',
+        url: 'http://test.com'
       }
     ];
     const expectedAction = {
       rssItem: {
-        description: "description",
+        description: 'description',
         guid: 1,
-        title: "title"
+        title: 'title',
+        url: 'http://test.com'
       },
       type: "ADD_RSS_ITEM"
     };
