@@ -8,3 +8,4 @@ Source code repository for asceresini.github.io aka ardel.io.
 
 - Add enzyme tests for React components.
 - Add Terraform config for AWS API Gateway Proxy.
+- Use CSS Loader in webpack and demonstrate CSS modules.
