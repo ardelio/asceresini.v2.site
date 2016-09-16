@@ -1,6 +1,6 @@
 import { expect } from 'chai'
-import { ADD_RSS_ITEM } from '../../app/react/redux-action-types'
-import { AddRssItem } from '../../app/react/action-creators'
+import { ADD_RSS_ITEM } from '../../../app/react/redux-action-types'
+import { AddRssItem } from '../../../app/react/action-creators'
 
 describe('AddRssItem', () => {
   it('returns an ADD_RSS_ITEM action', () => {

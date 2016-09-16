@@ -1,6 +1,6 @@
 import { expect } from 'chai'
-import Reducers from '../../app/react/reducers'
-import { ADD_RSS_ITEM } from '../../app/react/redux-action-types'
+import Reducers from '../../../app/react/reducers'
+import { ADD_RSS_ITEM } from '../../../app/react/redux-action-types'
 
 const { rssFeed } = Reducers
 
