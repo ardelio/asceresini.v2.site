@@ -10,7 +10,6 @@ export const RssFeed = props => (
         <div className="grid" key={item.guid}>
           <div className="cell">
             <RssItem
-              url={item.url}
               title={item.title}
               description={item.description} />
           </div>

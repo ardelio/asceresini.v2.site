@@ -18,8 +18,7 @@ class RssItem extends Component {
 
 RssItem.propTypes = {
   description: React.PropTypes.string,
-  title: React.PropTypes.string,
-  url: React.PropTypes.string
+  title: React.PropTypes.string
 }
 
 export default RssItem
