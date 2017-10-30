@@ -19,7 +19,6 @@ ReactDOM.render(
     <Container>
       <Hero title="Anthony Sceresini" punchline="This is a punchline. Say something punchy." />
       <SocialRibbon />
-      <RssFeed />
     </Container>
   </Provider>,
   document.getElementById('app')
