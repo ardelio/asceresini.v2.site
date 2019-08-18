@@ -9,10 +9,6 @@ build:
 	@echo NODE_ENV: production;
 	@NODE_ENV=production npm run build;
 
-package:
-	@echo 'Packaging additional files' \
-		&& cp CNAME build/;
-
 git_commit:
 	@echo 'Commiting as user: TravisCI' \
 		&& cd build/ \
@@ -25,7 +21,7 @@ git_push:
 	&& cd build/ \
 	&& git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master 2>%1 > /dev/null;
 
-deploy: test build package git_commit git_push
+deploy: test build git_commit git_push
 	@echo 'Deployed to GitHub';
 
-.PHONY: test build package deploy git_commit git_push
+.PHONY: test build deploy git_commit git_push
